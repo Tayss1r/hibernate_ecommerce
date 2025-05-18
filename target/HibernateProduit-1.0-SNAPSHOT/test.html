@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Static Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #333;
+        }
+        .links {
+            margin-top: 20px;
+        }
+        .links a {
+            display: inline-block;
+            margin-right: 15px;
+            text-decoration: none;
+            color: #0066cc;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Static Test Page</h1>
+        <p>This is a simple static HTML page to test if the server can serve basic HTML files.</p>
+        
+        <div class="links">
+            <h2>Navigation Links</h2>
+            <a href="index.jsp">JSP Test Page</a>
+            <a href="login.html">Login Page</a>
+            <a href="simple">Simple Test Servlet</a>
+        </div>
+        
+        <div>
+            <h2>JavaScript Test</h2>
+            <p>Current URL: <span id="currentUrl"></span></p>
+            <script>
+                document.getElementById('currentUrl').textContent = window.location.href;
+            </script>
+        </div>
+    </div>
+</body>
+</html>

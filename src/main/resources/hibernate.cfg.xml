@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-configuration>
+ <session-factory>
+ <!-- Configuration de la connexion à la base -->
+ <property
+name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+ <property
+name="hibernate.connection.url">jdbc:mysql://localhost:3306/produitsdb?useSSL=false&amp;serverTimezone=UTC</property>
+ <property name="hibernate.connection.username">root</property>
+ <property name="hibernate.connection.password"></property>
+ <!-- Dialecte SQL pour MySQL -->
+<property
+name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+ <!-- Configuration de la session contextuelle -->
+ <property name="hibernate.current_session_context_class">thread</property> <!-- Afficher les requêtes SQL dans la console -->
+ <property name="hibernate.show_sql">true</property>
+ <!-- Synchroniser automatiquement les entités avec la base -->
+ <property name="hibernate.hbm2ddl.auto">update</property>
+ <!-- Lien vers les classes annotées -->
+ <mapping class="com.exemple.model.Produit"/>
+ <mapping class="com.exemple.model.User"/>
+  </session-factory>
+</hibernate-configuration>

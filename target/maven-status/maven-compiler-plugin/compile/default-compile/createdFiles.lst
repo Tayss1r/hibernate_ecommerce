@@ -1,0 +1,9 @@
+com\exemple\model\User.class
+com\exemple\model\Produit.class
+com\exemple\dao\IUserDao.class
+com\exemple\dao\UserDaoImpl.class
+com\exemple\web\Controlleur.class
+com\exemple\dao\ProduitDaoImpl.class
+com\exemple\test\TestProduit.class
+com\exemple\test\TestUser.class
+com\exemple\dao\IProduitDAO.class
